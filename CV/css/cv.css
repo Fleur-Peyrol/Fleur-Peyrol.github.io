@@ -1,0 +1,189 @@
+html {
+    font-family: arial;
+}
+    
+
+/* * {
+border : solid 1px black;
+} */
+
+
+
+
+
+
+/* BODY */
+
+body {
+display : flex;
+justify-content:center;
+}
+
+aside {
+    width: 35%;
+    border-right:1.8px solid rgb(128,128,128);
+    height: 100vw;
+}
+
+main {
+    width: 65%;
+}
+
+/* ASIDE - partie de gauche */
+/* -------------------------------------- */
+
+/* ASIDE - HEADER */
+aside>header>* {
+    margin:auto;
+    text-align: center;
+    color:white;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+    width: 50%;
+}
+
+aside>header {
+    padding-top:5%;
+    padding-bottom:5%;
+}
+.contenair_img {
+    width:150px;
+    height:150px;  
+    display: block;
+}
+
+aside>header>img{
+    width:30%;
+    height:30%;  
+    border-radius: 50%;
+    object-fit:cover;
+}
+aside>header>h1 {
+    background-color: rgb(152,21,132);
+}
+
+aside>header>p {
+    background-color: rgb(128,128,128);
+    padding : 1%;
+}
+
+/* ASIDE - H2 */
+aside h2 {
+    color: rgb(152,21,132);
+    text-transform: uppercase;
+    text-align: center;
+    width: 70%;
+    margin:auto;
+    border-bottom: 1.8px solid rgb(128,128,128);
+    padding-bottom: 1%;
+}
+
+/* ASIDE - BLOC */
+aside .bloc {
+    padding-bottom: 5%;
+}
+
+aside .bloc img {
+    padding-bottom: 5%;
+    height: 8%;
+    width: 8%;
+}
+
+
+
+/* ASIDE - UL */
+aside ul{
+    width: 90%;
+    margin:auto;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    list-style-type: none;
+}
+
+/* ASIDE - LI */
+aside li{
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+aside li img{
+    height : 10px;
+    width : 10px;
+    
+}
+
+aside li .icon {
+    padding-right : 2%;
+    
+  }
+
+/* MAIN - partie de droite */
+/* -------------------------------------- */
+main>header{
+    height: 5%;
+    /* text-align:center; */
+    background-color:rgb(152,21,132);
+    /* color:white; */
+    display: flex;
+}
+
+main>header>h1{
+    text-align:center;
+    margin : auto; 
+    color:white;
+}
+
+main h2 {
+    color: rgb(152,21,132);
+    text-transform: uppercase;
+    text-align: center;
+    width: 70%;
+    /* margin:auto; */
+    border-bottom: 1.8px solid rgb(128,128,128);
+    padding-bottom: 1%;
+}
+
+
+
+/*
+aside li .icon {
+  width: 15%;
+  height: 15%;
+  position: relative;
+  
+}
+*/
+
+
+
+/* aside li .icon i {
+   position: absolute; 
+  
+  top: 20%;
+  left: 20%;
+  
+  transform: translate(-50%, -50%);
+} */
+
+
+
+
+
+
+
+
+/*
+h1,p {
+    width: 50%;
+    margin:auto;
+    text-align: center;
+    color:white;
+    text-transform: uppercase;
+}
+*/
+
+
+
+
+

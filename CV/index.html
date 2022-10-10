@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/cv.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/cv.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> -->
+    <script src="https://kit.fontawesome.com/814d5a2ad6.js" crossorigin="anonymous"></script>
 
     <title>CV - Fleur Peyrol</title>
 </head>
@@ -15,34 +17,57 @@
 
         <header>
             <!-- Photo + nom-->
+            <img class = "contenair_img" src="img/photo_profil.jpg" alt="photo_profil">
             <h1>FLEUR PEYROL</h1>
-            <p>Chargés d'études statistiques - CPAM du Puy-de-dôme</p>
+            <p> <strong> Chargés d'études statistiques </strong> <br> CPAM du Puy-de-dôme</p>
         </header>
 
-        <section id="contact">
+        <section class="bloc contact">
             <h2>Contact</h2>
             <ul> <!-- remplacer les intitulés par des icones -->
-                <li>mail : peyrol.fleur@gmail.com</li>
-                <li>tél : 06.50.54.93.68</li>
-                <li>adresse : 26T avenue de clémensat, 63540 Romagnat</li>
+                <li>
+                    <div class="icon">
+                        <i class="fa-solid fa-envelopes-bulk"></i>
+                    </div>
+                    <div class="data">
+                        peyrol.fleur@gmail.com
+                    </div>
+                  </li>
+                <!-- <li> <img src="img/courrier.png" alt ="mail"><strong>mail </strong>: peyrol.fleur@gmail.com</li> -->
+                <li>
+                    <div class="icon">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <div class="data">
+                      06.50.54.93.68
+                    </div>
+                </li>
+                <li>
+                    <div class="icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="data">
+                        26T avenue de clémensat, 63540 Romagnat
+                    </div>
+                </li>
             </ul>
         </section>
 
-        <section id="competences">
+        <section class="competences">
 
-            <div id="statistiques">
+            <div class="bloc statistiques">
                 <h2>Statistiques</h2>
                 <ul>
-                    <li>Méthodologie : Modéle de régression, Analyse de données, Datamining</li>
-                    <li>Outils statistiques : SAS, R</li>
+                    <li><strong>Méthodologie</strong> &nbsp;: Modéle de régression, Analyse de données, Datamining</li>
+                    <li><strong>Outils statistiques</strong> &nbsp;: SAS, R</li>
                 </ul>
             </div>
 
-            <div id="informatique">
+            <div class=" bloc informatique">
                 <h2>Informatiques</h2>
                 <ul>
-                    <li>Programmation : Langage C/C++, Visual Basic, HTML, CSS</li>
-                    <li>Base de données : SQL/MySQL</li>
+                    <li><strong>Programmation</strong> &nbsp;: Langage C/C++, Visual Basic, HTML, CSS</li>
+                    <li><strong>Base de données</strong> &nbsp;: SQL/MySQL</li>
                 </ul>
             </div>
 
@@ -51,7 +76,7 @@
 
     <main>
         <header>
-            <h2>Statisticienne / Chargé d'études statistiques</h2>
+            <h1>Statisticienne / Chargé d'études statistiques</h1>
         </header>
 
         <section id="exp_pro">
@@ -215,3 +240,7 @@
     
 </body>
 </html>
+
+
+
+
