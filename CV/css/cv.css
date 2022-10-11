@@ -17,6 +17,7 @@ border : solid 1px black;
 body {
 display : flex;
 justify-content:center;
+margin-bottom:5%;
 }
 
 aside {
@@ -120,6 +121,11 @@ aside li .icon {
 
 /* MAIN - partie de droite */
 /* -------------------------------------- */
+
+
+/* HEADER */
+/* -------------------------------------- */
+
 main>header{
     height: 5%;
     /* text-align:center; */
@@ -134,26 +140,84 @@ main>header>h1{
     color:white;
 }
 
+/* COMMUN*/
+/* -------------------------------------- */
+
 main h2 {
     color: rgb(152,21,132);
     text-transform: uppercase;
     text-align: center;
     width: 70%;
-    /* margin:auto; */
+    margin:auto; 
     border-bottom: 1.8px solid rgb(128,128,128);
+    padding-top: 5%;
+    padding-bottom: 2%;
+    margin-bottom: 5%;
+}
+
+main>#exp_pro, #formation{
+    padding-left: 3%;
+}
+
+.exp_pro__liste, .formation__liste {
+    display: flex;
+}
+
+.exp_pro__liste__date_lieu, .formation__liste__date_lieu {
+    width: 20%; 
+   color:rgb(128,128,128);
+}
+
+.exp_pro__liste__detail, .formation__liste__detail {
+    width: 80%; 
+}
+
+.exp_pro__liste__detail>p,.formation__liste__detail>p{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.exp_pro__liste__detail__poste, .formation__liste__detail__mention{
+    text-transform:initial; 
+    font-weight:initial;
+    color:rgb(128,128,128);
+}
+
+/* EXPERIENCE PRO */
+/* -------------------------------------- */
+
+.exp_pro__liste__detail>ul>li{
+margin-top:1%;
+}
+
+
+/* FORMATION */
+/* -------------------------------------- */
+
+.formation__liste__detail__ecole{
+font-style: italic;
+/* line-height: 50%; */
+}
+
+/* FORMATION */
+/* -------------------------------------- */
+#centre_interet>ul>li{
+    list-style: none;
     padding-bottom: 1%;
+
+}
+
+#centre_interet>ul>li>span{
+    color:rgb(128,128,128);
+    /* line-height: 50%; */
+    list-style: none;
 }
 
 
 
-/*
-aside li .icon {
-  width: 15%;
-  height: 15%;
-  position: relative;
-  
-}
-*/
+
+
+
 
 
 
