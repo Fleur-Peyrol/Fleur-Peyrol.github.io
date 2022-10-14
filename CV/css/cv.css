@@ -1,7 +1,10 @@
-html {
-    font-family: arial;
-}
-    
+/* Théme couleur */
+
+:root {
+    --main-color : rgb(152,21,132);
+    --second-color : rgb(128,128,128); 
+  }
+  
 
 /* * {
 border : solid 1px black;
@@ -12,18 +15,27 @@ border : solid 1px black;
 
 
 
-/* BODY */
 
+html {
+    font-family: arial;
+    background-color: black;
+    /* font-size : 0.9em; */
+} 
+
+/* BODY */
 body {
 display : flex;
 justify-content:center;
-margin-bottom:5%;
-}
+ /* margin-bottom:5%;  */
+width : 80%;
+margin : auto; 
+background-color: white;
+} 
 
 aside {
     width: 35%;
-    border-right:1.8px solid rgb(128,128,128);
-    height: 100vw;
+    border-right:1.8px solid var(--second-color);
+    /* height: 100vw; */
 }
 
 main {
@@ -60,22 +72,22 @@ aside>header>img{
     object-fit:cover;
 }
 aside>header>h1 {
-    background-color: rgb(152,21,132);
+    background-color: var(--main-color);
 }
 
 aside>header>p {
-    background-color: rgb(128,128,128);
+    background-color: var(--second-color);
     padding : 1%;
 }
 
 /* ASIDE - H2 */
 aside h2 {
-    color: rgb(152,21,132);
+    color: var(--main-color);
     text-transform: uppercase;
     text-align: center;
     width: 70%;
     margin:auto;
-    border-bottom: 1.8px solid rgb(128,128,128);
+    border-bottom: 1.8px solid var(--second-color);
     padding-bottom: 1%;
 }
 
@@ -92,21 +104,48 @@ aside .bloc img {
 
 
 
+
 /* ASIDE - UL */
-aside ul{
+
+/* 1er UL */
+ aside .bloc_detail{
     width: 90%;
     margin:auto;
-    padding-top: 2.5%;
+    padding-top: 2.5%; 
     padding-bottom: 2.5%;
     list-style-type: none;
+} 
+
+/* DIV contenant LI et UL pour les mettre côté à côté */
+aside .bloc_detail .bloc_detail_cote{
+    padding-top: 2.5%;
+    display: flex;
 }
 
+/* LI affiché en gras : pas de puce */
+.bloc_detail_cote>li{
+    list-style-type: none;
+} 
+
+/* LI affiché des LI en gras : changement de puce par défaut */
+@counter-style thumbs {
+    system: cyclic;
+    symbols: "\1F44D";
+    suffix: " ";
+  }
+  
+.bloc_detail_cote>ul>li{
+    list-style-type: thumbs;
+} 
+
+
+
 /* ASIDE - LI */
-aside li{
+ aside .contact>ul>li{
     padding-bottom: 1%;
     display: flex;
     justify-content: flex-start;
-}
+} 
 
 aside li img{
     height : 10px;
@@ -129,7 +168,7 @@ aside li .icon {
 main>header{
     height: 5%;
     /* text-align:center; */
-    background-color:rgb(152,21,132);
+    background-color : var(--main-color);
     /* color:white; */
     display: flex;
 }
@@ -144,12 +183,12 @@ main>header>h1{
 /* -------------------------------------- */
 
 main h2 {
-    color: rgb(152,21,132);
+    color: var(--main-color);
     text-transform: uppercase;
     text-align: center;
     width: 70%;
-    margin:auto; 
-    border-bottom: 1.8px solid rgb(128,128,128);
+    margin:auto;  
+    border-bottom: 1.8px solid var(--second-color);
     padding-top: 5%;
     padding-bottom: 2%;
     margin-bottom: 5%;
@@ -161,11 +200,13 @@ main>#exp_pro, #formation{
 
 .exp_pro__liste, .formation__liste {
     display: flex;
+    padding-right: 5%;
 }
 
 .exp_pro__liste__date_lieu, .formation__liste__date_lieu {
     width: 20%; 
    color:rgb(128,128,128);
+   font-size: 0.9em;
 }
 
 .exp_pro__liste__detail, .formation__liste__detail {
@@ -180,7 +221,7 @@ main>#exp_pro, #formation{
 .exp_pro__liste__detail__poste, .formation__liste__detail__mention{
     text-transform:initial; 
     font-weight:initial;
-    color:rgb(128,128,128);
+    color:var(--second-color);
 }
 
 /* EXPERIENCE PRO */
@@ -199,8 +240,9 @@ font-style: italic;
 /* line-height: 50%; */
 }
 
-/* FORMATION */
+/* CENTRE INTERET */
 /* -------------------------------------- */
+
 #centre_interet>ul>li{
     list-style: none;
     padding-bottom: 1%;
@@ -208,17 +250,9 @@ font-style: italic;
 }
 
 #centre_interet>ul>li>span{
-    color:rgb(128,128,128);
-    /* line-height: 50%; */
+    color:var(--second-color);
     list-style: none;
-}
-
-
-
-
-
-
-
+} 
 
 
 /* aside li .icon i {
@@ -229,12 +263,6 @@ font-style: italic;
   
   transform: translate(-50%, -50%);
 } */
-
-
-
-
-
-
 
 
 /*
