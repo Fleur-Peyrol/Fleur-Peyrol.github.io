@@ -19,7 +19,7 @@ border : solid 1px black;
 html {
     font-family: arial;
     background-color: black;
-    /* font-size : 0.9em; */
+    
 } 
 
 /* BODY */
@@ -114,12 +114,18 @@ aside .bloc img {
     padding-top: 2.5%; 
     padding-bottom: 2.5%;
     list-style-type: none;
+    /* padding-left: 0; */
 } 
+
+/* aside .bloc ul{
+    padding-left: 0;
+} */
 
 /* DIV contenant LI et UL pour les mettre côté à côté */
 aside .bloc_detail .bloc_detail_cote{
     padding-top: 2.5%;
     display: flex;
+    flex-wrap: wrap; /* pour le responsive */
 }
 
 /* LI affiché en gras : pas de puce */
@@ -130,7 +136,7 @@ aside .bloc_detail .bloc_detail_cote{
 /* LI affiché des LI en gras : changement de puce par défaut */
 @counter-style thumbs {
     system: cyclic;
-    symbols: "\1F44D";
+    symbols: ☑;
     suffix: " ";
   }
   
@@ -166,7 +172,7 @@ aside li .icon {
 /* -------------------------------------- */
 
 main>header{
-    height: 5%;
+    height: 5em;
     /* text-align:center; */
     background-color : var(--main-color);
     /* color:white; */
@@ -181,6 +187,10 @@ main>header>h1{
 
 /* COMMUN*/
 /* -------------------------------------- */
+
+main p {
+    margin:0;
+}
 
 main h2 {
     color: var(--main-color);
@@ -218,7 +228,7 @@ main>#exp_pro, #formation{
     font-weight: bold;
 }
 
-.exp_pro__liste__detail__poste, .formation__liste__detail__mention{
+.exp_pro__liste__detail__poste, .formation__liste__detail__mention, .formation__liste__detail__specialite{
     text-transform:initial; 
     font-weight:initial;
     color:var(--second-color);
@@ -240,6 +250,11 @@ font-style: italic;
 /* line-height: 50%; */
 }
 
+.formation__liste__detail{
+    margin-bottom: 2%;
+}
+
+
 /* CENTRE INTERET */
 /* -------------------------------------- */
 
@@ -250,8 +265,7 @@ font-style: italic;
 }
 
 #centre_interet>ul>li>span{
-    color:var(--second-color);
-    list-style: none;
+    font-weight: bold ;
 } 
 
 
@@ -275,6 +289,22 @@ h1,p {
 }
 */
 
+/* media queries */
+
+@media (max-width: 1024px) {
+    body {
+        width : 100%;
+        } 
+
+    aside>header>* {
+        width: 80%;
+    }
+
+    aside ul {
+        padding-left: 5%;
+    }
+   
+}
 
 
 
