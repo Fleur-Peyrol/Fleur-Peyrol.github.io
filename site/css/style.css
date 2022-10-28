@@ -1,0 +1,155 @@
+html {
+    --theme-main: rgb(0,80,255); 
+    --theme-alt: rgb(0,80,255);
+    /* --theme-red-main: rgb(243, 74, 52);
+    --theme-red-alt: rgb(207, 52, 31);
+    --theme-blue-main: rgb(68, 124, 187);
+    --theme-blue-alt: rgb(48, 103, 165); */
+  
+    --color-main: var(--theme-main); 
+    --color-alt: var(--theme-alt);
+    --border-normal: 1px solid rgba(0, 0, 0, .2);
+    --color-bg: white;
+    --color-opacity: rgba(0, 0, 0, .1); 
+  }
+
+  body {
+    font-family: 'Noto Sans', sans-serif;
+  }
+  
+  a:hover {
+    color: var(--color-alt);
+  }
+
+  p {
+    line-height: 1.3;
+  }
+
+
+ 
+.container {
+    border-top: var(--border-normal) !important;
+    border-bottom: var(--border-normal);
+    width: 96%;
+    max-width: 150em;
+    margin: 0 auto;
+}
+
+
+
+  .header__footer__flex {
+    padding: 1rem;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    
+    /* width: 1000px; */
+
+
+  }
+
+  .header__footer__flex>p {
+    font-size:0.9rem; 
+  }
+
+  .menu,.logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  main
+  {
+    height: 700px;
+    background-color: rgb(244,236,230);
+    display: flex;
+    margin : 10px 0;
+  }
+
+ 
+
+  .menu__item,.logo>div {
+    margin-left: 1rem;
+    text-transform: uppercase;
+  }
+
+  .logo__nom{
+    font-weight: bold;
+    font-size:1.5rem;
+    margin : auto;
+  }
+
+ 
+
+  .logo__metier{
+    margin : auto;
+  }
+
+  #carre_plein{
+    background-color: var(--theme-main); ;
+    width: 20px;
+    height: 20px;
+  }
+
+  #encart_principal
+  {
+    height: 600px;
+    width : 80%;
+    margin : auto;
+    background-color: rgb(230,218,206);
+    box-shadow: 5px 5px 10px grey;
+    display: flex;
+  }
+
+  .contenair_txt,.contenair_img{
+    /* border : solid 1px red ; */
+    width:50%;
+  }
+  .contenair_img{
+    /* width:50%;  */
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+  }
+
+  img{
+    /* height:50%;   */
+    width:40%;
+    max-height: 100%;
+    margin: 8px auto !important; 
+    /* width:30%;
+    height:30%;   */
+    /* border-radius: 50%; */
+    object-fit:cover;
+    }
+
+    .encart__nom{
+        font-weight: bold;
+        font-size:1.5rem;
+        margin : 0 auto;
+        /* text-transform: uppercase; */
+      }
+    #tiret{
+        background-color: blue;
+        height:2px;
+        width: 10%;
+        margin : 8px auto;
+    }
+
+    .contenair_img>p{
+        margin: 8px auto;
+        text-transform: uppercase;
+    }
+
+
+
+
+  /* .btn {
+    background-color: var(--color-main);
+    border: 0;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5rem;
+    display: inline-block;
+  } */
